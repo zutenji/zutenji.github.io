@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./prueba.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong> DE: - J</strong>
+                        <p>
+                            Para:L♥️
+                            <p>Laurita, creo que demorarías toda una vida para imaginarte cuanto te amo porque nunca he amado a una chica de la manera en que lo hago contigo; sinceramente, cuando empezó todo nunca imaginé llegar a sentir este tipo de cosas
+                                y de cambiar para bien como lo hice gracias a ti. Sé que si en este momento te digo que lo volvamos a intentar lo más probable es que me digas que no estás lista, pero espero que si lo estás no dudes en escribirme y pedirme
+                                que lo volvamos a intentar, porque te esperaré y no estoy diciendo que aunque no estés lista no hablemos, al contrario, si no estás lista te ruego que no perdamos contacto, que no nos volvamos 2 desconocidos en las vacaciones.
+                                Te esperaré por toda la vida y espero que en algún momento lo podamos volver a intentar. Y que si así decidieras volverlo a intentar, podamos hacerlo bien, que esta vez todo pueda ir a su debido tiempo. De verdad espero
+                                poder hacer de esto algo muy bonito (y ojalá en un futuro poder adoptar un mico y ponerle "Sople" Sople el mico y que aspire tussi)
+                                <p>Espero tu respuesta con cariño, J-Pablo-Mexicano-El mexichango.
+                                </p>
+                                <p>PD:(Sople el mono nos está esperando)
+                                </p>
+                            </p>
+                            <div class="image">
+                            </div>
+                    </div>
+                    <div class="Sople">
+                        <img src="sople.jpeg" width="75px" height="125px">
+
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+
+</html>
